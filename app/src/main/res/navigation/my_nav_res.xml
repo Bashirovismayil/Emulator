@@ -11,8 +11,8 @@
         android:label="fragment_splash_screen"
         tools:layout="@layout/fragment_splash_screen" >
         <action
-            android:id="@+id/action_splashScreen_to_myLogin"
-            app:destination="@id/myLogin" />
+            android:id="@+id/action_splashScreen_to_mainRegister"
+            app:destination="@id/mainRegister" />
     </fragment>
     <fragment
         android:id="@+id/myLogin"
@@ -20,20 +20,24 @@
         android:label="fragment_my_login"
         tools:layout="@layout/fragment_my_login" >
         <action
-            android:id="@+id/action_myLogin_to_myRegister"
-            app:destination="@id/myRegister" />
-        <action
             android:id="@+id/action_myLogin_to_myHomeUI"
             app:destination="@id/myHomeUI" />
     </fragment>
-    <activity
-        android:id="@+id/myRegister"
-        android:name="com.bashir.emulator.examtask.MyRegister"
-        android:label="activity_my_register"
-        tools:layout="@layout/activity_my_register" />
     <fragment
         android:id="@+id/myHomeUI"
         android:name="com.bashir.emulator.examtask.MyHomeUI"
         android:label="fragment_my_home_u_i"
         tools:layout="@layout/fragment_my_home_u_i" />
+    <fragment
+        android:id="@+id/mainRegister"
+        android:name="com.bashir.emulator.examtask.MainRegister"
+        android:label="fragment_main_register"
+        tools:layout="@layout/fragment_main_register" >
+        <action
+            android:id="@+id/action_mainRegister_to_myLogin"
+            app:destination="@id/myLogin" />
+        <action
+            android:id="@+id/action_mainRegister_to_myHomeUI"
+            app:destination="@id/myHomeUI" />
+    </fragment>
 </navigation>
