@@ -22,7 +22,7 @@ class MyMainActivity : AppCompatActivity() {
 
         coroutineScope.launch {
             delay(splashDelay)
-            val intent = Intent(this@MyMainActivity, MyRegisterActivity::class.java)
+            val intent = Intent(this@MyMainActivity, MainRegister::class.java)
             startActivity(intent)
             finish()
         }
