@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#008fa0"
+    tools:context=".Task6">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="330dp"
+        android:layout_height="640dp"
+        android:src="@drawable/whitebanner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538">
+
+    </ImageView>
+
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        android:src="@drawable/signin"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <ImageView
+        android:id="@+id/usernamebox5"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="292dp"
+        android:src="@drawable/username_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/enterusername3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your username"
+        app:layout_constraintBottom_toBottomOf="@+id/usernamebox5"
+        app:layout_constraintEnd_toEndOf="@+id/usernamebox5"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="@+id/usernamebox5"
+        app:layout_constraintTop_toTopOf="@+id/usernamebox5"
+        app:layout_constraintVertical_bias="0.533">
+
+    </EditText>
+
+    <ImageView
+        android:id="@+id/usernamebox6"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="208dp"
+        android:src="@drawable/username_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/rememberforgot"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/imageView10" />
+
+    <EditText
+        android:id="@+id/usernamepass3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/usernamebox6"
+        app:layout_constraintEnd_toEndOf="@+id/usernamebox6"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="@+id/usernamebox6"
+        app:layout_constraintTop_toTopOf="@+id/usernamebox6"
+        app:layout_constraintVertical_bias="0.504">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back!"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.063">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/worldButton"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
+        android:src="@drawable/permworld"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.123" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="132dp"
+        android:src="@drawable/plane"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginBottom="512dp"
+        android:src="@drawable/halfworld"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="20dp"
+        android:src="@drawable/haveacc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

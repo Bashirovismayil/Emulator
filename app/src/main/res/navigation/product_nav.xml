@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_nav"
+    app:startDestination="@id/homeFrag">
+
+    <fragment
+        android:id="@+id/homeFrag"
+        android:name="com.bashir.emulator.navigation.HomeFrag"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFrag_to_productFrag"
+            app:destination="@id/productFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/productFrag"
+        android:name="com.bashir.emulator.navigation.ProductFrag"
+        android:label="fragment_product"
+        tools:layout="@layout/fragment_product" />
+</navigation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav_res"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.bashir.emulator.examtask.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreen_to_myLogin"
+            app:destination="@id/myLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/myLogin"
+        android:name="com.bashir.emulator.examtask.MyLogin"
+        android:label="fragment_my_login"
+        tools:layout="@layout/fragment_my_login" >
+        <action
+            android:id="@+id/action_myLogin_to_myRegister"
+            app:destination="@id/myRegister" />
+        <action
+            android:id="@+id/action_myLogin_to_myHomeUI"
+            app:destination="@id/myHomeUI" />
+    </fragment>
+    <activity
+        android:id="@+id/myRegister"
+        android:name="com.bashir.emulator.examtask.MyRegister"
+        android:label="activity_my_register"
+        tools:layout="@layout/activity_my_register" />
+    <fragment
+        android:id="@+id/myHomeUI"
+        android:name="com.bashir.emulator.examtask.MyHomeUI"
+        android:label="fragment_my_home_u_i"
+        tools:layout="@layout/fragment_my_home_u_i" />
+</navigation>

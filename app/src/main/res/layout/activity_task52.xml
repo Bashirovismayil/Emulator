@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Task5_2">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/orange_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp">
+
+    </ImageView>
+
+    <ImageButton
+        android:id="@+id/linkbutton"
+        android:layout_width="183dp"
+        android:layout_height="93dp"
+        android:backgroundTint="#ff6002"
+        android:scaleType="centerInside"
+        android:src="@drawable/soft_button"
+        app:layout_constraintBottom_toTopOf="@+id/rectangles2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="1.2"
+        tools:ignore="InvalidId">
+
+    </ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/anroid_name"
+        android:textColor="#ff6002"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/linkbutton"
+        app:layout_constraintEnd_toEndOf="@id/linkbutton"
+        app:layout_constraintTop_toTopOf="@id/linkbutton"
+        app:layout_constraintBottom_toBottomOf="@id/linkbutton"
+
+        >
+
+    </TextView>
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="22dp"
+        android:src="@drawable/user_icon1"
+        app:layout_constraintBottom_toTopOf="@+id/rectangles1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/usernameDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/rectangles2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profession Name"
+        app:layout_constraintBottom_toTopOf="@+id/rectangles2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/usernameDefault"
+        app:layout_constraintTop_toBottomOf="@+id/usernameDefault"
+        app:layout_constraintVertical_bias="0.094">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/rectangles1"
+        android:layout_width="148dp"
+        android:layout_height="183dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/soft_rect">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="Create Employee"
+        app:layout_constraintEnd_toEndOf="@id/rectangles1"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/rectangles1"
+        app:layout_constraintTop_toTopOf="@id/rectangles1">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ellipse1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ellipse_icon">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/building"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ellipse1"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse1"
+        app:layout_constraintHorizontal_bias="1.6"
+        app:layout_constraintStart_toStartOf="@+id/ellipse1"
+        app:layout_constraintTop_toTopOf="@+id/ellipse1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/building_icon">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/rectangles2"
+        android:layout_width="148dp"
+        android:layout_height="183dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/soft_rect">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="Employee List"
+        app:layout_constraintEnd_toEndOf="@id/rectangles2"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/rectangles2"
+        app:layout_constraintTop_toTopOf="@id/rectangles2">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ellipse2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ellipse_icon">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/listIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ellipse2"
+        app:layout_constraintEnd_toEndOf="@+id/ellipse2"
+        app:layout_constraintHorizontal_bias="1.6"
+        app:layout_constraintStart_toStartOf="@+id/ellipse2"
+        app:layout_constraintTop_toTopOf="@+id/ellipse2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/list_icon">
+
+    </ImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

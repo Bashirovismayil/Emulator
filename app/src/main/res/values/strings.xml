@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Emulator</string>
+    <string name="anroid_name">Android-Link</string>
+    <string name="exam_string">Prosciutto e funghi is a pizza variety that is tapped with tomato sauce</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="example_mail_com">example@mail.com</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="your_name">       Your Name       </string>
+    <string name="your_email">Your Email</string>
+    <string name="your_password">Your Password</string>
+</resources>

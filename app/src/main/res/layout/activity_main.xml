@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Emulator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Username"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:hint="   Enter the Username"
+        android:inputType="textPersonName"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="   Enter the Email"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Password"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="   Enter the Password"
+
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CCCCCC"
+        android:textColor="@color/black"
+        android:text="Button"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
